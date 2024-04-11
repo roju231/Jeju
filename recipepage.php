@@ -2,30 +2,6 @@
 include 'connection.php';
 session_start();
 
-// if(!isset($_SESSION['gm8category']) ||$_SESSION['isLoggedin']!='true'){
-//   echo '<a class="navoptions" href="signin.php">Sign In<a>';
-// } 
-// if(isset($_SESSION['gm8category'])){
-//   $currsession= $_SESSION['gm8category'];
-//   $query0= "SELECT name, body, image from recipes";
-//   $result0 = mysqli_query($db, $query0);
-//   $result0Array = $result0 -> fetch_array(MYSQLI_NUM);
-//   if ($result0Array!=[]) {
-//     if($currsession=='featured'){
-//      $rand_keys= array_rand($result0Array, 9);
-//      $arrSize= sizeof($result0Array);
-//      $total= 9;
-//      if($arrSize<9){
-//       $total= $arrSize;
-//      }
-//      for ($i=0; $i < $total; $i++) { 
-//       echo '<div><div>'.$result0Array[$random_keys[$i]]['name'].'</div></div>';
-//      }
-
-//     }
-//   }
-// } 
-
 
 
 //Values 
@@ -63,7 +39,7 @@ if(isset($_POST['category'])){
     include 'nav2.php';
   ?>
   <div style='margin-left: 30px; margin-top: 30px; margin-right: 30px; overflow: hidden; height: 450px; border-radius: 10px'>
-    <img style='width: 100vw;' src="images/pexels-pixabay-361184.jpg" alt="">
+    <img style='width: 100vw;' src="deli.jpg" alt="">
   </div>
   <div style='margin-top: 60px; margin-left: 60px'>
   <div>

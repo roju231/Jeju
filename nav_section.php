@@ -51,11 +51,11 @@ session_start();
             ?> </a>
             <?php if(!isset($_SESSION['isLoggedin']) || $_SESSION['isLoggedin']!='true'){
                 // echo 'Sign Up';
-            echo  '<a class="navoptions" href="signup.php">Sign Up<a>';
+            echo  '<a class="navoptions" href="createAccount.php">Sign Up<a>';
             } 
             ?> </a>
             <?php if(!isset($_SESSION['isLoggedin']) ||$_SESSION['isLoggedin']!='true'){
-                echo '<a class="navoptions" href="signin.php">Sign In<a>';
+                echo '<a class="navoptions" href="login.php">Sign In<a>';
             } 
             ?> </a>
             <?php if(isset($_SESSION['isLoggedin'])&&$_SESSION['isLoggedin']=='true'){
